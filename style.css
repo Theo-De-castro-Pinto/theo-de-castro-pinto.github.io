@@ -66,3 +66,24 @@ td {
     vertical-align: top;
     text-align: right;
 }
+
+h3 {
+    text-decoration: underline;
+    font-weight: bold;
+    margin-left: 20px;
+    font-size: 1.3em;
+}
+
+.list-element {
+    margin-left: 50px;
+}
+
+.horizontal-ul {
+    display: flex;
+    list-style-type: disc;
+    padding-left: 0;
+}
+
+.horizontal-li {
+    margin-right: 20px;
+}
