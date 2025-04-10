@@ -22,14 +22,14 @@ p {
 
 .tab-el-center-left {
     background-color: rgb(216, 211, 219);
-    width: 100px;
+    width: 150px;
     font-size: 1.5em;
     display: inline-block;
 }
 
 .tab-el-center-right {
     background-color: rgb(216, 211, 219);
-    width: 400px;
+    width: 450px;
     font-size: 1.5em;
     display: inline-block;
 }
@@ -54,17 +54,28 @@ td {
     vertical-align: top;
 }
 
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* optional spacing between left and right */
+}
+
 .left-div {
-    width: 79%;
-    display: inline-block;
-    vertical-align: top;
+    flex: 1;
+    min-width: 0; /* allows shrinking properly if needed */
 }
 
 .right-div {
-    width: 19%;
-    display: inline-block;
-    vertical-align: top;
-    text-align: right;
+    flex-shrink: 1;
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.right-div img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 h3 {
